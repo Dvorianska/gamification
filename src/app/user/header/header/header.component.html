@@ -1,0 +1,34 @@
+<!-- <mat-sidenav-container>
+    <mat-sidenav position="start">
+    <button><a>Edit profile</a></button>
+    
+    </mat-sidenav>
+</mat-sidenav-container> -->
+
+<mat-toolbar >
+  <div>
+        
+<div>  
+  <button mat-button>
+  <mat-icon>menu</mat-icon> </button>
+  GMFCTN!
+</div>
+</div>
+
+
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Dashbord">  </mat-tab>
+    <mat-tab label="Badges">  </mat-tab>
+    <mat-tab label="Order">  </mat-tab>
+  </mat-tab-group>
+
+  <button  mat-button [matMenuTriggerFor]="menu">Username</button>
+
+<mat-menu #menu="matMenu" >
+  <button mat-menu-item>Edit profile</button>
+  <button mat-menu-item>Edit password</button>
+  <button mat-menu-item>Log out</button>
+</mat-menu>
+
+</mat-toolbar>
+
